@@ -104,7 +104,7 @@ def shopee_streamlit_app():
     session_ids = st.text_area("Enter session IDs (one per line):", "")
     session_ids = [line.strip() for line in session_ids.split("\n") if line.strip()]
 
-    if st.button("Login and Start Shopee Websockets"):
+    if st.button("Start"):
         if not username or not key:
             st.error("Please enter both username and key.")
             return
